@@ -9,6 +9,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Setup Git User
+        run: |
+          git config --global user.name "bimuafaq"
+          git config --global user.email "133272416+bimuafaq@users.noreply.github.com"
+
       - name: Initialize Environment
         run: |
           npm i -g opencode-ai@latest
